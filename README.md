@@ -12,10 +12,10 @@ There is a good manual about who to use jq [here](https://stedolan.github.io/jq/
 ``` bash
 apt install jq
 ```
+# Usages
+## Volumes
 
-# Volumes
-
-# Get all the volumes in your subscription of an specific size
+### Get all the volumes in your subscription of an specific size
 
 ``` bash
 az disk list | jq 'map(select(.diskSizeGb == 20))'
