@@ -21,3 +21,11 @@ apt install jq
 ``` bash
 az disk list | jq 'map(select(.diskSizeGb == 20))'
 ```
+
+## AKS
+
+### Get status of an AKS deployment (with watch)
+
+``` bash
+az aks list | jq 'map(.provisioningState)'
+```
